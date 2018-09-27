@@ -3,7 +3,7 @@ import math
 import numpy as numpy
 import matplotlib.pyplot as plt 
 
-h=np.logspace(0,-15, 100, base=10)
+h=np.float32(np.logspace(0,-15, 100, base=10))
 dcosx1=(np.cos(1.191+h) - np.cos(1.191)) / h
 a=(-1)*dcosx1
 
