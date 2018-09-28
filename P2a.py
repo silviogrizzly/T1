@@ -52,3 +52,25 @@ Fms=[]
 FmsR=[]
 S=[]
 Gs=[]
+
+for i in M:
+    if M.index(i)==a:
+        Frecuencia.append(i)
+        a=a+5
+    
+for i in M:
+    if M.index(i)==b:
+        Fms.append(i)
+        b=b+5
+for i in M:
+    if M.index(i)==c:
+        FmsR.append(i)
+        c=c+5
+for i in M:
+    if M.index(i)==d:
+        S.append(i)
+        d=d+5
+for i in M:
+    if M.index(i)==e:
+        Gs.append(i)
+        e=e+5
