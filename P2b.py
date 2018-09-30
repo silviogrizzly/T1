@@ -10,6 +10,7 @@ N=3*m
 a=0
 b=np.pi/2
 h=(np.pi/(2*(N)))
+tol=np.exp(-7)
 
 P_an= (np.pi**(4))/15
 
@@ -59,9 +60,17 @@ for i in range(1, m-1):
     
 Ist=(3*h/8)*(3*Su+2*Sd)
 
-print It
-print Isu
-print Ist
+
+#Tolerancia de error en metodos de integracion
+tol=np.exp(-9)
+
+if abs(P_an-It)<tol:
+    print "It=", It
+if abs(P_an-Isu)<tol:
+    print "Isu=", Isu
+if abs(P_an-Ist)<tol:
+    print "Ist=", Ist
+print tol
 print P_an
 
 #Metodo elegido: Metodo trapezoidal ya que con menor numero de particiones, se consigue mayor exactitud
